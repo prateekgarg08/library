@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="display_table_container"></div>
+    <div class="new_book" onclick="openForm()">New Book</div>
+    <div class="form-popup" id="myForm">
+      <form action="#" class="form-container">
+        <h1>ADD NEW BOOK</h1>
+
+        <label for="title"><b>Title</b></label>
+        <input name="title" type="text" placeholder="Enter title" name="title" required />
+
+        <label for="author"><b>Author</b></label>
+        <input name="author" type="text" placeholder="Enter Author" name="author" required />
+
+        <label for="pages"><b>Pages</b></label>
+        <input name="pages" type="number" placeholder="Enter Pages" name="pages" required />
+
+        <button type="button" onclick="addBook(this.form)" class="btn">Add</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </body>
+</html>
